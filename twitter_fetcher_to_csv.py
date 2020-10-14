@@ -20,7 +20,8 @@ class TwitterFetcherToCsv:
                         'possibly_sensitive', 'in_reply_to_screen_name', 'in_reply_to_status_id_str', 'retweet_count',
                         'favorite_count', 'coordinates', 'in_reply_to_user_id_str', 'place', 'is_quote_status',
                         'display_text_range', 'contributors', 'favorited', 'conversation_id', 'extended_entities',
-                        'self_thread', 'quoted_status_permalink', 'quoted_status_id_str', 'quoted_status_id']
+                        'self_thread', 'quoted_status_permalink', 'quoted_status_id_str', 'quoted_status_id',
+                        'withheld_copyright', 'withheld_in_countries', 'withheld_scope']
 
     def with_accounts(self, accounts):
         self._accounts = accounts
