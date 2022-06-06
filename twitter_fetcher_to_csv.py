@@ -91,8 +91,8 @@ class TwitterFetcherToCsv:
     def _get_query(self, account, date):
         return {
             'fields': [
-                {'items': self._key_words, 'match': 'any'},
-                {'items': [account], 'target': 'from'},
+                {'items': self._key_words},
+                {'items': [account], 'target': 'from', 'match': 'any'},
             ],
             'since': date.strftime("%Y-%m-%d"),
             'until': (date + timedelta(days=1)).strftime("%Y-%m-%d")
